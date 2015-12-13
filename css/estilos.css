@@ -1,0 +1,119 @@
+.navbar-distinta {
+    max-height: 174px;
+}
+.icon-bar {
+  border-color: black;
+}
+
+.toggle-distinto {
+    position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color:brown;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.icon-bar-distinto {
+    background-color: black;
+}
+
+.fondo-navbar {
+    position: absolute;
+    z-index: -2000;
+    width: 80%;
+    margin-left:20%;
+    
+ 
+}
+
+.jumbotron-distinto {
+    width: 50%;
+    padding: 0px;
+    float: right;
+    background-color: transparent;
+    margin-top: 45px;
+    
+}
+
+.fondo-menu-izq {
+    position: absolute;
+    z-index: -100;
+width: 30%;
+    height: 100%;
+    margin-top: 10%;
+    float: bottom;
+}
+
+.logo {
+    position: absolute;
+    width: 20%;
+    max-width: 250px;
+    min-width: 130px;
+ 
+}
+
+.collapse-distinta {
+   float: right;
+}
+
+
+
+.fondo-nube {
+    position: absolute;
+    z-index: -20;
+    width: 50%;
+    max-height: 130px;
+  opacity: 0.7;
+   margin-left: -60px;
+   margin-top: -16px;
+    margin-right: 40px;
+    
+ 
+}
+
+h1 .titulo {
+    color: darkred;
+    
+}
+
+.breadcrumb-distinto {
+    padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+ background-color: transparent;
+   /* background-image: image("imagenes/nube.png");
+  border-radius: 4px;*/
+}
+
+
+
+.nube {
+    position: absolute;
+    z-index: -50;
+    width: 120px;
+    opacity: 0.6;
+    
+}
+
+.texto-migas {
+    width: 130px;
+    text-align: center;
+    font-size: 16px;
+    padding: 7px;
+ 
+}
+
+.miga-de-pan {
+}
+
+.container-contenido {
+    padding-right: 10px;
+  padding-left: 7%;
+  margin-right: 10px;
+ /* margin-left: 14%;*/
+}
