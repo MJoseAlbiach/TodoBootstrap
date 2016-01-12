@@ -134,7 +134,7 @@ html, body {
 .fondo-barra {
     position: absolute;
     z-index: -10;
-    width: 100%;
+   /* width: 100%;*/
     /*max-height: 150px;*/
    
 }
