@@ -18,11 +18,7 @@
 .menu {
   width: 5em;
   height: 5em;
-<<<<<<< HEAD
     top:50px;
-=======
-    top:70px;
->>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
 
 }
 .menu .btn {
@@ -114,14 +110,11 @@
 .menu.active .btn-icon {
   opacity: 1;
   z-index: 50;
-<<<<<<< HEAD
   background-image: url(imgcss/gusano2.png);
   background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
    
-=======
->>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
 }
 .menu.active .trigger .line {
   height: 0px;
@@ -284,7 +277,6 @@ updated ver
 
 .accordion {
     position:relative;
-<<<<<<< HEAD
     padding-right: 0px;
     padding-left: 0px;
   
@@ -483,11 +475,6 @@ updated ver
   -webkit-transition: 0.2s 0.3s;
           transition: 0.2s 0.3s;
 }
-=======
-    background-color:#eee;
-}
-
->>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
 
 .accordion dl,
 .accordion-list {
@@ -512,7 +499,6 @@ updated ver
   padding:1em 2em 1em 2em;
 }
 
-<<<<<<< HEAD
 .accordionTitle,
 .accordion__Heading {
     background-color:#6f5212; 
@@ -524,20 +510,6 @@ updated ver
     color:#fff;
     transition:background-color 0.5s ease-in-out;
     border-bottom:1px solid darken(#4a2704, 5%);
-=======
-/**/
-.accordionTitle,
-.accordion__Heading {
- background-color:#6f5212; 
-   text-align:center;
-     font-weight:700; 
-          padding:2em;
-          display:block;
-          text-decoration:none;
-          color:#fff;
-          transition:background-color 0.5s ease-in-out;
-  border-bottom:1px solid darken(#4a2704, 5%);
->>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
   &:before {
    content: "+";
    font-size:1.5em;
@@ -596,12 +568,7 @@ updated ver
 .accordionItem {
     height:auto;
     overflow:hidden; 
-<<<<<<< HEAD
 /*    //SHAME: magic number to allow the accordion to animate*/   
-=======
-/*    //SHAME: magic number to allow the accordion to animate*/
-    
->>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
      max-height:50em;
     transition:max-height 1s;   
  
@@ -648,14 +615,6 @@ updated ver
        }
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-/**/
-
->>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
 .accordionItem {
   height: auto;
   overflow: hidden;
@@ -744,7 +703,4 @@ updated ver
 }
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
