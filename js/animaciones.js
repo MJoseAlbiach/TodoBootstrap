@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // HABILITA LOS TOOLTIPS
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -7,6 +8,8 @@ $(function () {
 //    $('[data-toggle="tooltip"]').tooltip();
 //});
 
+=======
+>>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
 //MENÚ CIRCULAR CON ROTACIÓN DEL SUBMENÚ
 $(document).ready(function() {
   $(".trigger").click(function() {
@@ -14,12 +17,15 @@ $(document).ready(function() {
   });
 });
 
+<<<<<<< HEAD
 // BOTONES CIRCULARES DEL PIE
 
 $('.btn-triger').click(function(){
   $(this).closest('.float-btn-group').toggleClass('open');
 });
 
+=======
+>>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
 // LISTA DESPLEGABLE
 //uses classList, setAttribute, and querySelectorAll
 //if you want this to work in IE8/9 youll need to polyfill these
@@ -82,6 +88,7 @@ switchAccordion = function(e) {
   }
 })();
 // FIN DE LA LISTA DESPLEGABLE
+<<<<<<< HEAD
 // PLUGIN DE FACEBOOK
 
 (function(d, s, id) {
@@ -91,3 +98,5 @@ switchAccordion = function(e) {
   js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+=======
+>>>>>>> 83df38915804f91480acb33d2aad78cb67e38d41
