@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Animación tronco</title>
+         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_tronco.css">
+  </head>
+  <body>
+    <div id="container">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 325 1082">
+     <g id="tronco">
+      <path fill="#996633" stroke="#000000" stroke-width="6" stroke-miterlimit="10" d="M9.91,1080.548l309.862-2.103
+			c0,0-42.571-22.499-51.571-124.493c-9.9-112.204-8.2-405.599-13.499-500.975C245.258,282.983,265.176,253,265.176,253
+			s23.05-44.255,46.023-70.51c20.999-23.999,4.5-76.496,4.5-76.496l-4.5-34.499l-10.5-20.999c0,0-12.441-15.505-17.999-3
+			c-1.632,3.672-23.999-28.499-23.999-28.499l12,50.998c0,0,13.5,31.499,12,55.498c-1.509,24.139-20.999,65.997-20.999,65.997
+			l-28.499,23.999c0,0-57.201,36.167-79.496,38.998c-23.198,2.946-76.496-68.997-76.496-68.997s15.365,66.392,12.474,90.01
+			c-0.939,7.671-52.441-164.284-48.441-150.284c5.391,18.869,0.333,58-4.667,48c-42.117-84.234-26-5.333-4.667,37.333
+			c11.686,23.372,60.984,185.17,68.641,247.348c9.142,74.234-5.809,224.228-2.266,274.839
+			C119.288,1032.764,9.91,1080.548,9.91,1080.548z"/>
+      </g>
+     </svg>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>      
+        <script type='text/javascript'>
+      function SVG(t){return document.createElementNS("http://www.w3.org/2000/svg",t)}function replaceRectsWithPaths(t){var a=$(t).find("rect");$.each(a,function(){var t=$(this).attr("x"),a=$(this).attr("y"),r=parseFloat(t)+parseFloat($(this).attr("width")),e=parseFloat(a)+parseFloat($(this).attr("height")),i="M"+t+","+a+" "+r+","+a+" "+r+","+e+" "+t+","+e+" "+t+","+a;$(SVG("path")).attr("d",i).attr("fill",$(this).attr("fill")).attr("stroke",$(this).attr("stroke")).attr("stroke-width",$(this).attr("stroke-width")).attr("stroke-linecap",$(this).attr("stroke-linecap")).insertAfter(this)}),$(a).remove()}function replaceLinesWithPaths(t){var a=$(t).find("line");$.each(a,function(){var t=$(this).attr("x1"),a=$(this).attr("y1"),r=$(this).attr("x2"),e=$(this).attr("y2"),i="M"+t+","+a+" "+r+","+e;$(SVG("path")).attr("d",i).attr("fill",$(this).attr("fill")).attr("stroke",$(this).attr("stroke")).attr("stroke-width",$(this).attr("stroke-width")).attr("stroke-linecap",$(this).attr("stroke-linecap")).insertAfter(this)}),$(a).remove()}function replaceCirclesWithPaths(t){var a=$(t).find("circle");$.each(a,function(){var t=$(this).attr("cx"),a=$(this).attr("cy"),r=$(this).attr("r"),e=parseFloat(2*r),i="M"+t+", "+a+" m"+-r+", 0 a "+r+", "+r+" 0 1,0 "+e+",0 a "+r+", "+r+" 0 1,0 "+-e+",0 ";$(SVG("path")).attr("d",i).attr("fill",$(this).attr("fill")).attr("stroke",$(this).attr("stroke")).attr("stroke-width",$(this).attr("stroke-width")).attr("stroke-linecap",$(this).attr("stroke-linecap")).insertAfter(this)}),$(a).remove()}function replaceEllipsesWithPaths(t){var a=$(t).find("ellipse");$.each(a,function(){var t=$(this).attr("cx"),a=$(this).attr("cy"),r=$(this).attr("rx"),e=$(this).attr("ry"),i="M"+t+", "+a+" m"+-r+", 0 a "+r+", "+e+" 0 1,0 "+2*r+",0 a "+r+", "+e+" 0 1,0 "+2*-r+",0 ";$(SVG("path")).attr("d",i).attr("fill",$(this).attr("fill")).attr("stroke",$(this).attr("stroke")).attr("stroke-width",$(this).attr("stroke-width")).attr("stroke-linecap",$(this).attr("stroke-linecap")).insertAfter(this)}),$(a).remove()}function replacePolygonsWithPaths(t){var a=$(t).find("polygon");$.each(a,function(){var t=$(this).attr("points"),a=t.split(/[ ,]+/),r=a[0]+", "+a[1];$(SVG("path")).attr("d","M"+t+" "+r).attr("fill",$(this).attr("fill")).attr("stroke",$(this).attr("stroke")).attr("stroke-width",$(this).attr("stroke-width")).attr("stroke-linecap",$(this).attr("stroke-linecap")).insertAfter(this)}),$(a).remove()}function replacePolylinesWithPaths(t){var a=$(t).find("polyline");$.each(a,function(){var t=$(this).attr("points");$(SVG("path")).attr("d","M"+t).attr("fill",$(this).attr("fill")).attr("stroke",$(this).attr("stroke")).attr("stroke-width",$(this).attr("stroke-width")).attr("stroke-linecap",$(this).attr("stroke-linecap")).insertAfter(this)}),$(a).remove()}function hideSVGPaths(t){var a=$(t).find("path");$.each(a,function(){var t=this.getTotalLength();$(this).css({"stroke-dashoffset":t,"stroke-dasharray":t+" "+t})})}function drawSVGPaths(t,a,r,e){var i=$(t).find("path");$.each(i,function(t){var i=this.getTotalLength();$(this).css({"stroke-dashoffset":i,"stroke-dasharray":i+" "+i}),$(this).delay(e*t).animate({"stroke-dashoffset":0},{duration:Math.floor(Math.random()*r)+a,easing:"easeInOutQuad"})})}function replaceWithPaths(t){replaceRectsWithPaths(t),replaceLinesWithPaths(t),replaceEllipsesWithPaths(t),replaceCirclesWithPaths(t),replacePolygonsWithPaths(t),replacePolylinesWithPaths(t)}function startSVGAnimation(t){drawSVGPaths(t,1e3,2e3,50)}$(function(){$("button").on("click",function(t){t.preventDefault(),setTimeout(function(){drawSVGPaths("svg",1e3,2e3,50),$("button").blur()},300)})}),jQuery.extend(jQuery.easing,{easeInOutQuad:function(t,a,r,e,i){return(a/=i/2)<1?e/2*a*a+r:-e/2*(--a*(a-2)-1)+r}}),replaceWithPaths($("svg")),startSVGAnimation($("svg"));
+      </script>   
+  </body>
+</html>
